@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  background-image: url(https://untroubled.org/backgrounds/metal/bg3.jpg);
+  background-size: contain;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  color: white;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  background:rgb(223,223,225);
+  color: #000000;
+  border: solid 1px;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.2em;
+  padding:10px 10px;
+  width:50px;
+  margin: 10px;
+  outline: none;
+}
