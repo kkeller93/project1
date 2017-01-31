@@ -11,6 +11,10 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.buttons {
+  max-width: 70%;
+  margin: 0 auto;
+}
 
 button {
   background:rgb(223,223,225);
@@ -24,12 +28,13 @@ button {
   margin: 10px;
   outline: none;
   justify-content: flex-end;
+  border-radius: 25px;
 }
 
 h2 {
   display: inline;
 }
-
+/*
 .hidden {
   display: inline-flex;
   border-bottom: solid 3px black;
@@ -37,14 +42,24 @@ h2 {
   color: rgba(0,0,0,0);
   text-align: center;
   width: 20px;
-}
+}*/
 
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V, .W, .X, .Y, .Z {
   display: inline-flex;
-  border-bottom: solid 3px black;
+  border-bottom: solid 4px black;
   margin: 10px 10px 0px 10px;
   color: rgba(0,0,0,0);
   text-align: center;
-  width: 20px;
-  /*font-size: 30px;*/
+  width: 50px;
+  font-family: sans-serif;
+  font-size: 50px;
+  /*padding: 10px;*/
+}
+
+img {
+  width: 300px;
+  height:300px;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
 }
