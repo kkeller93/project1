@@ -38,6 +38,11 @@ img {
   margin: 20px auto;
 }
 
+p {
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V, .W, .X, .Y, .Z {
   display: inline-flex;
   border-bottom: solid 4px black;
