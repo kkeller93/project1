@@ -20,6 +20,8 @@ $('#play').on('click', changeToPlay);
 function changeToPlay(){
   bo = $('body');
   bo.css('background-image', "url('http://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Download-Chalkboard-Pictures.jpg')");
+  // bo.css('background-color','rgb(101,76,23)');
+  // bo.css('background-repeat', "no-repeat");
   // hiding the content from div tag rules and showing game
   $('.game').toggle();
   $('.rules').hide();
@@ -40,6 +42,9 @@ function changeToRules(){
   // hiding the content from div tag game and showing rules
   $('.game').hide();
   $('.rules').toggle();
+  bo = $('body');
+  bo.css('background-image', "url(https://untroubled.org/backgrounds/metal/bg3.jpg)");
+  bo.css('background-repeat', "repeat-y");
   // hiding the rules button and showing the home&play
   document.getElementById('rules').style.display = "none";
   document.getElementById('home').style.display = "block";
@@ -50,6 +55,7 @@ $('#home').on('click',revertBack);
 function revertBack() {
   bo = $('body');
   bo.css('background-image', "url(https://untroubled.org/backgrounds/metal/bg3.jpg)");
+  bo.css('background-repeat', "repeat-y");
   // hiding the content from div tags game and rules
   $('.game').hide();
   $('.rules').hide();
@@ -95,6 +101,7 @@ function hangman() {
     //updating the images with hangman parts
     if (count == 0) {
       alert("GAME OVER");
+      $('.game-wrapper').html("<img src='img/game_over.png'>")
     }
   }
 }

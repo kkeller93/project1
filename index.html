@@ -8,25 +8,27 @@
   <body>
     <div class="menu">
       <!-- styling for menu page -->
-      <h2 id="home">Home</h2>
-      <h2 id="play">Play</h2>
-      <h2 id="rules">Rules</h2>
+      <h2 class="select" id="home">Home</h2>
+      <h2 class="select" id="play">Play</h2>
+      <h2 class="select" id="rules">Rules</h2>
     </div>
-    <div class="game">
-      <!-- set the styling for game page -->
-      <!-- <h1>Hangman</h1> -->
-      <div class="buttons"></div>
-    </div>
-    <div class="rules">
-      <!-- set the styling for rules page -->
-      <h1>Hangman Rules</h1>
-      <ul>
-        <p>Allow for there to be 2 players</p>
-        <p>Player 1 picks the secret word</p>
-        <p>Player 2 will try to guess the word that Player 1 has picked</p>
-        <p>Player 2 has only 6 wrong guesses, after 6 incorrect guesses the game will reset</p>
-      </ul>
-    </div>
+    <div class="game-wrapper">
+      <div class="game">
+        <!-- set the styling for game page -->
+        <!-- <h1>Hangman</h1> -->
+        <div class="buttons"></div>
+      </div>
+      <div class="rules">
+        <!-- set the styling for rules page -->
+        <h1>Hangman Rules</h1>
+        <ul>
+          <p>Allow for there to be 2 players</p>
+          <p>Player 1 picks the secret word</p>
+          <p>Player 2 will try to guess the word that Player 1 has picked</p>
+          <p>Player 2 has only 6 wrong guesses, after 6 incorrect guesses the game will reset</p>
+        </ul>
+      </div>
+    </div> <!--game wrapper ends!!!-->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script type="text/javascript" src='script.js'></script>

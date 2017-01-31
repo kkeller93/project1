@@ -3,7 +3,6 @@ body {
   background-image: url(https://untroubled.org/backgrounds/metal/bg3.jpg);
   background-size: contain;
   background-position: center;
-  /*background-repeat: no-repeat;*/
   color: white;
   flex-wrap: wrap;
   align-content: space-around;
@@ -31,9 +30,7 @@ button {
   border-radius: 25px;
 }
 
-h2 {
-  display: inline;
-}
+
 /*
 .hidden {
   display: inline-flex;
@@ -62,4 +59,15 @@ img {
   display: block;
   text-align: center;
   margin: 20px auto;
+}
+
+.select {
+  margin: 20px auto;
+  display: block;
+  background: rgb(71,72,74);
+  border: solid black 2px;
+  min-width: 200px;
+  max-width: 400px;
+  min-height: 30px;
+  max-height: 35px;
 }
