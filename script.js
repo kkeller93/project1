@@ -27,7 +27,7 @@ alpha = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 alphabet = alpha.split('');
 var guess;
 var hang;
-var spare;
+var spare=[];
 count = 6;
 // placing the alphabet in an array to be referenced to
 // console.log(alphabet);
@@ -96,14 +96,14 @@ function buttonVar() {
 function hangman() {
   console.log(hang);
   console.log("guess: ", guess);
-  var i = 0;
+  //var i = 0;
   if (hang.indexOf(guess)!= -1) { // creating the checker to see if letter is in index
     for (var i = 0; i < hang.length; i++) {
       // iterating through the array
       console.log(hang.indexOf(guess,i));
-      // if (hang.indexOf(guess,i)) {
-      if (hang[i] == $(this).text()) {
-        $('.' + hang[i]).css('color','rgba(0,0,0,1)');
+      if (hang.indexOf(guess,i)) {
+      // if (hang[i] == $(this).text()) {
+        $('.' + guess).css('color','rgba(0,0,0,1)');
       }
       // console.log('success');
       // break;
@@ -122,6 +122,7 @@ function hangman() {
 
 function board() {
   for (var i=0;i<hang.length;i++) {
+    // creating the divs for the word
     $('.game').append('<div class="'+hang[i]+'">'+hang[i]+'</div>').text();
     // $('<div class="hidden"></div>').text(hang[i]).appendTo(".game");
     // spare = $(this).attr('id');
