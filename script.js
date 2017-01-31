@@ -100,7 +100,7 @@ function hangman() {
     $('img').attr('src',"img/hangman"+ imgCount +".jpg")
     //updating the images with hangman parts
     if (count == 0) {
-      alert("GAME OVER");
+      //alert("GAME OVER");
       $('.game-wrapper').html("<img src='img/game_over.png'>")
     }
   }
