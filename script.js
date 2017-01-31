@@ -1,28 +1,3 @@
-// Main page
-// metal background
-// two buttons - 'play game' & 'rules'
-// user can click on either button
-//
-// Rules page
-// user clicks on initial "rules" button
-// once clicked change background and display scroll
-// rules displayed on scroll
-//
-// Game page
-// user clicks on play game button changes to chalkboard background
-// display alphabet buttons at bottom of the page
-// prompt user for a word
-// place word in an array
-// check the length of the array and display underscores on page
-// allow for user to click on letters
-// if correct display all of the same letter on the underscore section
-// if incorrect display new hangman part
-// once all hangman pieces are displayed
-// show prompt "you lose"
-// if word is guessed
-// show prompt "you win!"
-// reset gameboard after game is complete
-
 alpha = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 alphabet = alpha.split('');
 var guess;
