@@ -25,6 +25,10 @@
 
 alpha = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 alphabet = alpha.split('');
+var guess;
+var hang;
+var spare;
+count = 6;
 // placing the alphabet in an array to be referenced to
 // console.log(alphabet);
 for (var i=0;i < alphabet.length; i++) {
@@ -48,14 +52,16 @@ function changeToPlay(){
   document.getElementById('play').style.display = "none";
   document.getElementById('home').style.display = "block";
   document.getElementById('rules').style.display = "block";
-  hangman();
+  // prompt to get the word or phrase
+  hang = prompt("Enter a word (no numbers or phrases)").toUpperCase();
+  hang = hang.split('');
+  // hangman();
+  board();
 }
 
 // changing the background image when Rules is clicked on
 $('#rules').on('click', changeToRules);
 function changeToRules(){
-  bo = $('body');
-  bo.css('background-image', "url('http://m.rgbimg.com/cache1nhWrE/users/x/xy/xymonau/600/dKTqsb.jpg')");
   // hiding the content from div tag game and showing rules
   $('.game').hide();
   $('.rules').toggle();
@@ -78,14 +84,50 @@ function revertBack() {
   document.getElementById('play').style.display = "block";
 }
 
-$('button').on('click', print)
-function print() {
-  console.log(this.innerHTML);
+$('button').on('click', buttonVar)
+function buttonVar() {
+  guess = this.innerHTML;
+  $(this).hide(); // hiding the button that was just clicked
+  // console.log(guess);
+  hangman();
 }
 
-//creating the game function
+//creating the game functions
 function hangman() {
-  hang = prompt("Enter a word or phrase");
-  hang = hang.split('');
   console.log(hang);
+  console.log("guess: ", guess);
+  var i = 0;
+  if (hang.indexOf(guess)!= -1) { // creating the checker to see if letter is in index
+    for (var i = 0; i < hang.length; i++) {
+      // iterating through the array
+      console.log(hang.indexOf(guess,i));
+      // if (hang.indexOf(guess,i)) {
+      if (hang[i] == $(this).text()) {
+        $('.' + hang[i]).css('color','rgba(0,0,0,1)');
+      }
+      // console.log('success');
+      // break;
+    }
+  }
+  else {
+    console.log('try again');
+    count --;
+    alert("Incorrect Guess, you have " + count+ " lives left");
+    if (count == 0) {
+      alert("GAME OVER");
+      // break;
+    }
+  }
 }
+
+function board() {
+  for (var i=0;i<hang.length;i++) {
+    $('.game').append('<div class="'+hang[i]+'">'+hang[i]+'</div>').text();
+    // $('<div class="hidden"></div>').text(hang[i]).appendTo(".game");
+    // spare = $(this).attr('id');
+    // console.log(spare);
+  }
+}
+
+//matching the divs
+//if letter matches change opacity to 100% on div .hidden
