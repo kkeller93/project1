@@ -130,5 +130,8 @@ function board() {
   }
 }
 
+function image() {
+  
+}
 //matching the divs
 //if letter matches change opacity to 100% on div .hidden

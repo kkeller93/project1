@@ -38,18 +38,7 @@ h2 {
   text-align: center;
   width: 20px;
 }
-/*this {
-  display: inline-flex;
-  border-bottom: solid 3px black;
-  margin: 10px 10px 0px 10px;
-  color: rgba(0,0,0,0);
-  text-align: center;
-  width: 20px;
-}*/
 
-/*#hang[i] {
-  color: rgba(0,0,0,1);
-}*/
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V, .W, .X, .Y, .Z {
   display: inline-flex;
   border-bottom: solid 3px black;
