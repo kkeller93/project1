@@ -101,7 +101,7 @@ function hangman() {
     //updating the images with hangman parts
     if (count == 0) {
       //alert("GAME OVER");
-      $('.game-wrapper').html("<img src='img/game_over.png'>")
+      setTimeout(function() {$('.game-wrapper').html("<img src='img/game_over.png'>");}, 1000);
     }
   }
 }
