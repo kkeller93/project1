@@ -27,8 +27,8 @@ when user clicks on "play" button
 
 User Stories:
 
-Story 1: As a user of the hangman game, I want to be able to input a word and then have dashes show on the next screen corresponding to the length of the word so that Player 2 knows how long the word is
-Story 2: As a user, I want a game over picture so that I know when the game is done after 6 incorrect guesses
-Story 3: As a user, I want to be able to flip between a rules page and a gameplay page so that I can refresh my memory on the rules at any time
-Story 4: As a user, I want to the buttons to disappear as I click them so that I will not be able to click on the same letter multiple times
-Story 5: As a user, I want a picture of a hangman to update so that I know just how many incorrect guesses I have made and will play more strategically
+- Story 1: As a user of the hangman game, I want to be able to input a word and then have dashes show on the next screen corresponding to the length of the word so that Player 2 knows how long the word is
+- Story 2: As a user, I want a game over picture so that I know when the game is done after 6 incorrect guesses
+- Story 3: As a user, I want to be able to flip between a rules page and a gameplay page so that I can refresh my memory on the rules at any time
+- Story 4: As a user, I want to the buttons to disappear as I click them so that I will not be able to click on the same letter multiple times
+- Story 5: As a user, I want a picture of a hangman to update so that I know just how many incorrect guesses I have made and will play more strategically
