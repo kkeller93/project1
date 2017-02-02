@@ -2,6 +2,7 @@ alpha = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 alphabet = alpha.split('');
 var guess;
 var hang;
+var counter = 0;
 count = 6;
 imgCount = 1;
 // placing the alphabet in an array to be referenced to
@@ -79,12 +80,17 @@ function hangman() {
   console.log("guess: ", guess);
   //var i = 0;
   if (hang.indexOf(guess)!= -1) { // creating the checker to see if letter is in index
+    counter++;
     for (var i = 0; i < hang.length; i++) {
       // iterating through the array
       console.log(hang.indexOf(guess,i));
+      console.log("counter: " + counter);
       if (hang.indexOf(guess,i)) {
         $('.' + guess).css('color','rgba(0,0,0,1)');
         // changing the opacity of the letter if matching
+        if (counter == hang.length) {
+          setTimeout(function() {location.reload();}, 1000); //reset
+        }
       }
       // console.log('success');
       // break;
@@ -102,6 +108,7 @@ function hangman() {
     if (count == 0) {
       //alert("GAME OVER");
       setTimeout(function() {$('.game-wrapper').html("<img src='img/game_over.png'>");}, 1000);
+      setTimeout(function() {location.reload();}, 3000); //reloads the page after the game is lost
     }
   }
 }
